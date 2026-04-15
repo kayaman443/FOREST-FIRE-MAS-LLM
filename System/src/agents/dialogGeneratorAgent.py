@@ -16,7 +16,7 @@ class DialogGeneratorAgent(BaseAgent):
         ZASADY STYLU — to jest najważniejsze:
         1. Rozmowy mają brzmieć jak PRAWDZIWA, nieformalna gadka w terenie —
            potoczny język, skróty myślowe, urwane zdania, przekrzykiwanie się,
-           łagodne przekleństwa (kurde, kurwa, cholera, do diabła).
+           łagodne przekleństwa.
            Przykłady dobrych kwestii:
            "Zenek, tu nic nie ma, żadnego pożaru, spokojnie wracamy"
            "Kurde stary, tu się pali na całego, nie da się podejść bliżej"

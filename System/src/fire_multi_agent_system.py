@@ -98,11 +98,11 @@ class FireMultiAgentSystem:
 
         # ── NAGŁÓWEK ──
         print(f"\n{separator}")
-        print("🌲  MULTI-AGENT SYSTEM — POŻARY LEŚNE / Wspomaganie Kierownika Akcji")
+        print("   MULTI-AGENT SYSTEM — POŻARY LEŚNE / Wspomaganie Kierownika Akcji")
         print(separator)
-        print(f"⏰  Start: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"🤖  Model: {MODEL}")
-        print(f"📡  Agenty: {len(self.agents)}")
+        print(f"   Start: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"   Model: {MODEL}")
+        print(f"   Agenty: {len(self.agents)}")
         for agent in self.agents:
             print(f"    • {agent.name} — {agent.role}")
         print(f"{separator}\n")
@@ -111,18 +111,18 @@ class FireMultiAgentSystem:
         print("┌─────────────────────────────────────────────────────────────┐")
         print("│  ETAP 1/3 — Agent DialogGenerator generuje dialog...        │")
         print("└─────────────────────────────────────────────────────────────┘")
-        print(f"  📋 Scenariusz: {scenario}\n")
+        print(f"    Scenariusz: {scenario}\n")
 
         dialog_result = self.dialog_agent.generate_dialog(scenario)
 
-        print("  ✅ Dialog wygenerowany!\n")
+        print("    Dialog wygenerowany!\n")
         print("  ── DIALOG STRAŻAKÓW W TERENIE LEŚNYM ───────────────────")
         for line in dialog_result.dialog_text.split("\n"):
             if line.strip():
                 print(f"  {line}")
         print("  ─────────────────────────────────────────────────────────\n")
         if dialog_result.participants:
-            print(f"  👥 Uczestnicy: {', '.join(dialog_result.participants)}\n")
+            print(f"    Uczestnicy: {', '.join(dialog_result.participants)}\n")
 
         # ── ETAP 2: Analiza ryzyka ──
         print("┌─────────────────────────────────────────────────────────────┐")
@@ -135,18 +135,18 @@ class FireMultiAgentSystem:
             "NISKI": "🟢", "ŚREDNI": "🟡", "WYSOKI": "🟠", "KRYTYCZNY": "🔴"
         }.get(risk_analysis.risk_level, "⚪")
 
-        print(f"  ✅ Analiza zakończona!\n")
+        print(f"    Analiza zakończona!\n")
         print(f"  {risk_emoji} Poziom ryzyka:    {risk_analysis.risk_level}")
-        print(f"  🌲 Typ pożaru leśn.: {risk_analysis.fire_type}")
-        print(f"  📍 Lokalizacja:      {risk_analysis.location}")
-        print(f"  💨 Tempo/warunki:    {risk_analysis.estimated_intensity}")
-        print(f"  👤 Ryzyko cywilów:   {risk_analysis.civilian_risk}")
+        print(f"    Typ pożaru leśn.: {risk_analysis.fire_type}")
+        print(f"    Lokalizacja:      {risk_analysis.location}")
+        print(f"    Tempo/warunki:    {risk_analysis.estimated_intensity}")
+        print(f"    Ryzyko cywilów:   {risk_analysis.civilian_risk}")
         if risk_analysis.threats:
-            print(f"  ⚠️  Zagrożenia:")
+            print(f"     Zagrożenia:")
             for t in risk_analysis.threats:
                 print(f"      • {t}")
         if risk_analysis.affected_zones:
-            print(f"  📍 Strefy zagrożenia:")
+            print(f"    Strefy zagrożenia:")
             for z in risk_analysis.affected_zones:
                 print(f"      • {z}")
         print()
@@ -158,23 +158,23 @@ class FireMultiAgentSystem:
 
         report = self.command_agent.generate_report(dialog_result, risk_analysis)
 
-        print("  ✅ Raport gotowy!\n")
+        print("    Raport gotowy!\n")
         print(separator)
         print(report.full_report)
         print(separator)
 
         # ── PODSUMOWANIE SYSTEMU ──
         print(f"\n{'─' * 70}")
-        print("📊  PODSUMOWANIE PRACY SYSTEMU MULTI-AGENTOWEGO")
+        print("   PODSUMOWANIE PRACY SYSTEMU MULTI-AGENTOWEGO")
         print(f"{'─' * 70}")
         total_tokens = sum(
             entry.get("tokens", 0)
             for agent in self.agents
             for entry in agent.conversation_history
         )
-        print(f"  ⏱️  Zakończono:      {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"  🔢  Łączne tokeny:   {total_tokens}")
-        print(f"  📝  Etapy:           3/3 ukończone")
+        print(f"      Zakończono:      {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"      Łączne tokeny:   {total_tokens}")
+        print(f"      Etapy:           3/3 ukończone")
         print(f"  {risk_emoji}  Końcowa ocena:   {risk_analysis.risk_level}")
         print(f"{'─' * 70}\n")
 
@@ -194,7 +194,7 @@ class FireMultiAgentSystem:
 def print_menu():
     """Wyświetla menu główne."""
     print("\n╔══════════════════════════════════════════════════════════════╗")
-    print("║   🌲 MULTI-AGENT SYSTEM — POŻARY LEŚNE                       ║")
+    print("║   MULTI-AGENT SYSTEM — POŻARY LEŚNE                          ║")
     print("║   Wspomaganie decyzji kierownika akcji gaśniczej             ║")
     print("╠══════════════════════════════════════════════════════════════╣")
     print("║                                                              ║")
@@ -209,7 +209,7 @@ def print_menu():
 
 def show_scenario_list():
     """Wyświetla listę predefiniowanych scenariuszy."""
-    print("\n  📋 Dostępne scenariusze:")
+    print("\n    Dostępne scenariusze:")
     print("  " + "─" * 60)
     for i, sc in enumerate(SCENARIOS, 1):
         print(f"  [{i}] {sc}")
@@ -244,7 +244,7 @@ def show_system_info():
   ╠════════════════════════════════════════════════════════════════╣
   ║  LLM:   Groq (Llama 3.3 70B)                                   ║
   ║  Język: Python 3.10+                                           ║
-  ║  API:   groq (pip install groq)                                ║
+  ║  API:   groq                                                   ║
   ╚════════════════════════════════════════════════════════════════╝
     """)
 

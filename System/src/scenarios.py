@@ -1,4 +1,4 @@
-# Scenariusze pożarów leśnych do losowego wyboru (lub podania własnego)
+# Scenariusze pożarów leśnych do losowego wyboru
 SCENARIOS = [
     "Pożar poszycia leśnego w Borach Tucholskich, silny wiatr zachodni, ogień zbliża się do wioski Małe Swornegacie",
     "Pożar torfowiska na Polesiu Lubelskim, ogień schodzi pod ziemię, brak widocznych płomieni, gęsty dym",

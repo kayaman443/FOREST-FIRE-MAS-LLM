@@ -20,23 +20,23 @@ class CommandAdvisorAgent(BaseAgent):
         FORMAT RAPORTU:
 
         ═══════════════════════════════════════════════════════
-        🌲 RAPORT OPERACYJNY — POŻAR LEŚNY
-        📋 dla Kierownika Akcji Gaśniczej
+        RAPORT OPERACYJNY — POŻAR LEŚNY
+        dla Kierownika Akcji Gaśniczej
         ═══════════════════════════════════════════════════════
 
-        🕐 Data i godzina: [aktualna]
-        📍 Lokalizacja: [z analizy — nazwa lasu, oddział, okolice]
-        🔥 Typ pożaru leśnego: [poszycie/podkoronowy/koron/torfowisko]
-        ⚠️  Poziom zagrożenia: [z analizy]
-        💨 Warunki: [wiatr, temperatura, wilgotność]
+        Data i godzina: [aktualna]
+        Lokalizacja: [z analizy — nazwa lasu, oddział, okolice]
+        Typ pożaru leśnego: [poszycie/podkoronowy/koron/torfowisko]
+        Poziom zagrożenia: [z analizy]
+        Warunki: [wiatr, temperatura, wilgotność]
 
         ─────────────────────────────────────────────────────
-        📊 OCENA SYTUACJI W TERENIE
+        OCENA SYTUACJI W TERENIE
         ─────────────────────────────────────────────────────
         [2-3 zdania: co się pali, jak szybko, co zagraża]
 
         ─────────────────────────────────────────────────────
-        🎯 SUGEROWANE DZIAŁANIA (w kolejności priorytetów)
+        SUGEROWANE DZIAŁANIA (w kolejności priorytetów)
         ─────────────────────────────────────────────────────
         1. [PRIORYTET: NATYCHMIASTOWY] Działanie...
            → Uzasadnienie...
@@ -45,36 +45,36 @@ class CommandAdvisorAgent(BaseAgent):
         [itd. — min. 6 działań]
 
         ─────────────────────────────────────────────────────
-        🚒 PRZYDZIAŁ SIŁ I ŚRODKÓW
+        PRZYDZIAŁ SIŁ I ŚRODKÓW
         ─────────────────────────────────────────────────────
         • Zastęp / pojazd → konkretne zadanie → sektor leśny / droga
         [uwzględnij: zastępy gaśnicze, beczkowozy, quady leśne,
          śmigłowce, dozorców leśnych, Policję do ewakuacji]
 
         ─────────────────────────────────────────────────────
-        💧 GOSPODARKA WODNA
+        GOSPODARKA WODNA
         ─────────────────────────────────────────────────────
         [plan zaopatrzenia w wodę: źródła, trasy beczkowozów,
          szacunkowe zużycie, alternatywne punkty czerpania]
 
         ─────────────────────────────────────────────────────
-        🌲 LINIE OBRONY I BARIERY OGNIOWE
+        LINIE OBRONY I BARIERY OGNIOWE
         ─────────────────────────────────────────────────────
         [które drogi leśne, rzeki, polany mogą zatrzymać ogień,
          gdzie budować pas przeciwogniowy, które sektory chronić]
 
         ─────────────────────────────────────────────────────
-        👥 EWAKUACJA I OCHRONA CYWILÓW
+        EWAKUACJA I OCHRONA CYWILÓW
         ─────────────────────────────────────────────────────
         [które wsie/campingi ewakuować, kto to wykonuje, trasy]
 
         ─────────────────────────────────────────────────────
-        ⚡ OSTRZEŻENIA DLA DOWÓDCÓW W TERENIE
+        OSTRZEŻENIA DLA DOWÓDCÓW W TERENIE
         ─────────────────────────────────────────────────────
         [zmiany wiatru, ryzyko dla strażaków, strefy zakazane]
 
         ─────────────────────────────────────────────────────
-        📡 ŁĄCZNOŚĆ I KOORDYNACJA
+        ŁĄCZNOŚĆ I KOORDYNACJA
         ─────────────────────────────────────────────────────
         [kanały radiowe, koordynacja z Lasami Państwowymi,
          RDOŚ, lotnictwem, policją i pogotowiem]
